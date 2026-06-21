@@ -7,5 +7,6 @@ public class Literal  {
         System.out.println("Hello World!");//字符串
         System.out.println('a');//字符
         System.out.println(true);//布尔值
+
     }
 }
