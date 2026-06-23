@@ -12,6 +12,6 @@ public class Test {
         System.out.println(s1.age);
         System.out.println(s1.sex);
         System.out.println(s1.height);
-        System.out.println(s1.weight);
+
     }
 }
