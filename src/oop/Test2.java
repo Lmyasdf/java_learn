@@ -6,7 +6,6 @@ public class Test2 {
         s1.name = "小明";
         s1.math = 90;
         s1.chinese = 80;
-        System.out.println(s1.name + "的总成绩是" + (s1.math+s1.chinese) );
-
+        s1.printAllScore();
     }
 }
