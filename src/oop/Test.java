@@ -1,7 +1,7 @@
 package oop;
 
 public class Test {
-    static void main() {
+    public static void main(String[] args) {
         Star s1 = new Star();
         s1.name = "张三";
         s1.age = 18;
