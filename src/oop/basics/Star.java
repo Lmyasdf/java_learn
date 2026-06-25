@@ -1,4 +1,4 @@
-package oop;
+package oop.basics;
 
 public class Star {
     String name;
