@@ -1,4 +1,4 @@
-package oop.inheritance;
+package oop.inheritance.extendsdemo;
 
 public class Text {
     public static void main(String[] args){

@@ -1,4 +1,4 @@
-package oop.inheritance;
+package oop.inheritance.extendsdemo;
 
 public class Consultant extends People {
     private String skill;

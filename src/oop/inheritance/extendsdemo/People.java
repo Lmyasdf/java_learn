@@ -1,4 +1,4 @@
-package oop.inheritance;
+package oop.inheritance.extendsdemo;
 //父类
 //继承的好处：代码复用
 public class People {
