@@ -7,6 +7,8 @@ public class Benefit {
         // 1.解耦合
         Animal a = new Dog();//dog可以换成cat等等，后面代码不需要修改
         System.out.println(a.talk());
+        //a.run(); 报错，多态不能调用子类的独有方法
+
         Animal b = new Cat();
         test(b);
         test(a);
