@@ -7,4 +7,7 @@ public class Cat extends Animal {
     public String talk(){
         return "喵喵喵";
     }
+    public void run(){
+        System.out.println("小猫在跑");
+    }
 }
