@@ -1,4 +1,4 @@
-package oop.movie;
+package oop.example.movie;
 
 public class Movie {
     private String name;

@@ -1,4 +1,4 @@
-package oop.movie;
+package oop.example.movie;
 
 public class Test {
     public static void main(String[] args) {
