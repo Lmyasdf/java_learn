@@ -17,7 +17,10 @@ public class Benefit {
     //2.父类类型变量作为参数可以接受任意子类对象
     public void test(Animal a){
         System.out.println(a.talk());
+        //instanceof语句，判断该对象是否是某个类的对象
+        //格式：对象 instanceof 类名
         if(a instanceof Dog){
+            //强转可以解决多态不能调用子类独有方法的问题
             Dog d = (Dog)a;
             d.run();
         }
