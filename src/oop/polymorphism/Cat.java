@@ -1,4 +1,4 @@
-package oop.polymorphism.demo;
+package oop.polymorphism;
 
 public class Cat extends Animal {
     private String name = "猫";

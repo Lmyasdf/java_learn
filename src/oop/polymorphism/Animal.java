@@ -1,4 +1,4 @@
-package oop.polymorphism.demo;
+package oop.polymorphism;
 
 public class Animal {
     protected String name = "动物";

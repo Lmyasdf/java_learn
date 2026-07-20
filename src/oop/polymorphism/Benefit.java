@@ -1,4 +1,4 @@
-package oop.polymorphism.demo;
+package oop.polymorphism;
 
 public class Benefit {
     //多态的好处：
