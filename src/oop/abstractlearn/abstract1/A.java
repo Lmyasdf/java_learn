@@ -1,4 +1,4 @@
-package oop.abstractlearn;
+package oop.abstractlearn.abstract1;
 
 import lombok.Data;
 
