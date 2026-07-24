@@ -11,7 +11,7 @@ public class CollectionTraversalDemo {
         list.add("b");
         list.add("S");
 
-        //1.迭代器遍历
+        //1.迭代器遍历(推荐，不用管索引问题，可增删，另外的遍历用)
         Iterator<String> it = list.iterator();
         while(it.hasNext()){
             System.out.println(it.next());
