@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class SetDemo1 {
     public static void main(String[] args) {
-        //HashSet:无序、不重复、无索引
+        //HashSet:无序、不重复、无索引  扩容：16*0.75,括两倍
         //LinkedSet:有序、不重复、无索引
         //TreeSet:排序、不重复、有索引
         Set<String> set = new HashSet<>();
