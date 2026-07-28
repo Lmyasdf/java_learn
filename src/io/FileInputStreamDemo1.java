@@ -23,6 +23,7 @@ public class FileInputStreamDemo1 {
         os.write("\r\n".getBytes());
         byte[] b2 = "我爱你中国666".getBytes();
         os.write(b2);
+        os.write(b2,0,3);//我
         os.close();
     }
 }
