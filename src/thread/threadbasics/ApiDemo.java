@@ -1,4 +1,4 @@
-package thread;
+package thread.threadbasics;
 
 public class ApiDemo {
     public static void main(String[] args) {

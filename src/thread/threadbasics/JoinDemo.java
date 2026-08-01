@@ -1,4 +1,4 @@
-package thread;
+package thread.threadbasics;
 //join方法：等待调用它的线程执行完毕，再继续执行其他线程
 //线程插队
 public class JoinDemo {

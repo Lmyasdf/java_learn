@@ -1,4 +1,4 @@
-package thread;
+package thread.threadbasics;
 
 public class Createdemo1 {
     //main方法本身是由一条主线程负责执行的

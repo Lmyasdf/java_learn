@@ -1,4 +1,4 @@
-package thread;
+package thread.threadbasics;
 
 //第二种创建方式，实现Runnable接口
 public class CreateDemo2 {
