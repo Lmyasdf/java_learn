@@ -14,13 +14,17 @@ public class UDPServerDemo {
         DatagramPacket packet = new DatagramPacket(b,b.length);
 
         //3.接收
-        socket.receive(packet);
+        while (true) {
+            socket.receive(packet);
 
-        int len = packet.getLength();
-        String data = new String(b,0,len);
-        System.out.println(data);
-        System.out.println("发送端IP：" + packet.getAddress().getHostAddress());
-        System.out.println("发送端端口：" +packet.getPort());
+            int len = packet.getLength();
+            String data = new String(b,0,len);
+            System.out.println(data);
+            System.out.println("发送端IP：" + packet.getAddress().getHostAddress());
+            System.out.println("发送端端口：" +packet.getPort());
+            System.out.println("----------------");
+
+        }
 
     }
 }
