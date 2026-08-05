@@ -1,4 +1,4 @@
-package net.chat_system;
+package net.chat_system.server;
 
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -22,7 +22,6 @@ public class Server {
                 //接收管道创建线程处理
                 ServerThread st = new ServerThread(s);
                 st.start();
-                System.out.println("一个用户上线了");
             }
         } catch (IOException e) {
             e.printStackTrace();

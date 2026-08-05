@@ -1,4 +1,4 @@
-package net.chat_system;
+package net.chat_system.server;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -42,9 +42,7 @@ public class ServerThread extends Thread {
                         break;
                     case 3:
                         //私聊
-                        System.out.println("请输入私聊目标用户昵称：");
                         String target = dis.readUTF();
-                        System.out.println("请输入私聊消息：");
                         String privateMsg = dis.readUTF();
                         //1.判断目标用户是否存在
                         if(!Server.onlineSocket.containsValue(target)){
@@ -134,9 +132,22 @@ public class ServerThread extends Thread {
         //发送私聊消息给目标用户
         try {
             DataOutputStream dos = Server.dosMap.get(targetSocket);
+            //1.处理信息(时间+用户名+消息内容)
+            LocalDateTime now = LocalDateTime.now();
+            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss EEE a");
+
+            StringBuilder sb = new StringBuilder();
+            sb.append(dtf.format(now));
+            sb.append("\r\n");
+            sb.append(Server.onlineSocket.get(socket));
+            sb.append(":");
+            sb.append(privateMsg);
+
+            //2.发送消息给目标用户
             dos.writeInt(3);
-            dos.writeUTF(privateMsg);
+            dos.writeUTF(sb.toString());
             dos.flush();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
