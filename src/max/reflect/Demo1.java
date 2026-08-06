@@ -1,6 +1,6 @@
 package max.reflect;
 
-public class Demo {
+public class Demo1 {
     // 反射的使用
 
     public static void main(String[] args) throws ClassNotFoundException {
