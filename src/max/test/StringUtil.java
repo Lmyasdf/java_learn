@@ -1,4 +1,4 @@
-package max.test.test;
+package max.test;
 
 public class StringUtil {
     public static void printNumber(String name){

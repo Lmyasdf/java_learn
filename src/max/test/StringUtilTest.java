@@ -1,4 +1,4 @@
-package max.test.test;
+package max.test;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
