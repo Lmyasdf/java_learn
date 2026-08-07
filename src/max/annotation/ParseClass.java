@@ -1,15 +1,13 @@
 package max.annotation;
 
-import org.testng.annotations.Test;
-
 import java.lang.reflect.Field;
 import java.util.Arrays;
 
-//解析注解：判断类/字段/方法上面是否有注解，然后获取注解属性值
+//解析注解：判断类/字段/方法上面是否有注解，然后进行解析
 public class ParseClass {
     public static void main(String[] args) {
         //1.类的注解
-        Class c = MyAnnotation.class;
+        Class c = Test.class;
         //使用isAnnotationPresent判断这个类上是否有A注解
         if(c.isAnnotationPresent(A.class)){
             //使用getDeclaredAnnotation获取A注解对象
@@ -23,10 +21,10 @@ public class ParseClass {
 
     }
 
-    @Test
+    @org.testng.annotations.Test
     public void ParseField(){
         try{
-            Class c = MyAnnotation.class;
+            Class c = Test.class;
             Field f = c.getDeclaredField("name");
             if(f.isAnnotationPresent(A.class)){
                 //获取注解对象
